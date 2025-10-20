@@ -104,8 +104,7 @@ export default LoginPage;
   - Name: Member Benefits API
   - Authorized JavaScript origins: `http://localhost:3000`
   - Authorized Redirect URLs: `http://localhost:8080/login/oauth2/code/google`
-  - Client ID: `822562807821-f512p0b8aj2tq7ls9pkkad31a226ma1o.apps.googleusercontent.com`
-  - Client Secret: `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`
+  - For Google OAuth Creds., see Sticky Note
 
 #### GitHub
 1. Create local directory (with Backend, Frontend and Database sub-directories)
