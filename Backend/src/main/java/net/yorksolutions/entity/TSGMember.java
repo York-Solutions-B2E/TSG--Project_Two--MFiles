@@ -42,7 +42,7 @@ public class TSGMember {
     private TSGAddress mailingAddress;
 
     // DESC: Est. a Bi-Directional One-to-Many relationship with Enrollment
-    @OneToMany(mappedBy = "member_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "memberId", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TSGEnrollment> enrollments;
 
     // DESC: Helper-methods for Bi-Directional Member--Enrollment relationship

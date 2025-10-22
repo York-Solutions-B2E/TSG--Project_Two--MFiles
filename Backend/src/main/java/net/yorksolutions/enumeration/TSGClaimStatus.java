@@ -1,4 +1,4 @@
-package net.yorksolutions.entity;
+package net.yorksolutions.enumeration;
 
 public enum TSGClaimStatus {
     SUBMITTED,

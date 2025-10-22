@@ -1,6 +1,7 @@
 package net.yorksolutions.entity;
 
 import jakarta.persistence.*;
+import net.yorksolutions.enumeration.TSGClaimStatus;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.math.BigDecimal;
@@ -40,6 +41,7 @@ public class TSGClaim {
 
     private LocalDate receivedDate;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TSGClaimStatus status;
 
@@ -56,7 +58,7 @@ public class TSGClaim {
     private BigDecimal totalMemberResponsibility;
 
     // DESC: Est. a Bi-Directional One-to-Many relationship with ClaimLine
-    @OneToMany(mappedBy = "claim_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "claimId", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TSGClaimLine> lines;
 
     // DESC: Helper-methods for Bi-Directional Claim--ClaimLine relationship
@@ -70,7 +72,7 @@ public class TSGClaim {
     }
 
     // DESC: Est. a Bi-Directional One-to-Many relationship with ClaimStatusEvent
-    @OneToMany(mappedBy = "claim_id",  cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "claimId",  cascade = CascadeType.ALL, orphanRemoval = true)
     @Column(name = "status_history")
     private List<TSGClaimStatusEvent> statusHistory;
 

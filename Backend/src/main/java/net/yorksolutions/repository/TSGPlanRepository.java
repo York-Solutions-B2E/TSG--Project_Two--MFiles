@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface TSGPlanRepository extends JpaRepository<TSGPlan, UUID> {}
+public interface TSGPlanRepository extends JpaRepository<TSGPlan, UUID> {
+    // JPA Built-In Method: Optional<TSGPlan> findById(UUID id)
+}

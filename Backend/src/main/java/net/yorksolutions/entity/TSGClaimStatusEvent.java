@@ -1,6 +1,7 @@
 package net.yorksolutions.entity;
 
 import jakarta.persistence.*;
+import net.yorksolutions.enumeration.TSGClaimStatus;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.time.OffsetDateTime;
@@ -19,9 +20,10 @@ public class TSGClaimStatusEvent {
 
     // DESC: Est. a Bi-Directional Many-to-One relationship w/ Claim
     @ManyToOne
-    @JoinColumn(name = "claim_id", referencedColumnName = "status_history")
+    @JoinColumn(name = "claim_id")
     private TSGClaim claimId;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TSGClaimStatus status;
 

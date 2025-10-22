@@ -1,9 +1,11 @@
 
 # Member Benefits Dashboard
 
+When working on *requirements*, move them to *Pending Requirements* and, when done, move them all the way to the bottom under *Completed Requirements*.
+
 ## Notes
 
-When working on *requirements*, move them to *Pending Requirements* and, when done, move them all the way to the bottom under *Completed Requirements*.
+### Pre-Project
 
 > "Authentication" pertains to "who I am" whereas "Authorization" pertains to "what I can do"
 
@@ -22,6 +24,11 @@ When working on *requirements*, move them to *Pending Requirements* and, when do
 - To handle proper testing, provided YOUR Gmail account information and YOU will be the primary test-user
 - There is **no** mention of a CSS framework
 
+## Mid-Project
+
+- The `Integer lineNumber` field, in `TSGClaimLine.java`, should auto-increment, however there is no required `POST` method so I have the SQL handling a form of a request to get the number when determining the next value
+  - Per spec, it must be an integer-value, so this seems like a valid work-around
+
 ## Modifications
 
 - Appended `TSG` to all Entity, Service, Controller and Repository names
@@ -32,6 +39,7 @@ When working on *requirements*, move them to *Pending Requirements* and, when do
   - For *One-to-Many* relationships, they were added as *Many-to-One* and an appropriate Object-instance field was added, in all *children*, in lieu of the `UUID` foreign-keys
     - Based on research and, more specifically, the *High-Performance Java Persistence* book, a *Many-to-One* relationship is more performant than the *One-to-Many* not to mention it is best practice to use an Object-instance foreign key **not** a standard `UUID`
       - Apparently the Object-instance foreign keys boil down to a `UUID` under the hood
+- Changed table-name of `User` to `TSGUser` because PostgreSQL "User" is a reserved word in PostgreSQL
 
 ## Pending Requirements
 
@@ -154,7 +162,7 @@ As a member, I want to filter and browse my claims so I can find the visit I’m
 
 **Acceptance Criteria**
 - AC1: Table columns: **Claim #**, **Service Dates**, **Provider**, **Status**, **Member Responsibility**.
-- AC2: Filters: **Status** (multi‑select), **Date Range**, **Provider (text)**, **Claim # (exact)**.
+- AC2: Filters: **Status** (multi‑ select), **Date Range**, **Provider (text)**, **Claim # (exact)**.
 - AC3: Default sort by **processed/received date (desc)**.
 - AC4: **Server‑side pagination** (page size 10; selector 10/25).
 - AC5: Clicking a row opens **Claim Detail**.

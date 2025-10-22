@@ -1,1 +1,0 @@
--- Schema definition goes here

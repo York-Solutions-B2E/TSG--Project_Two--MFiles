@@ -20,7 +20,7 @@ public class TSGEnrollment {
 
     // DESC: Est. a Bi-Directional Many-to-One relationship w/ Member
     @ManyToOne
-    @JoinColumn(name = "member_id", referencedColumnName = "enrollments")
+    @JoinColumn(name = "member_id")
     private TSGMember memberId;
 
     // DESC: Est. a Uni-Directional Many-to-One relationship w/ Plan
@@ -37,7 +37,7 @@ public class TSGEnrollment {
     private Boolean active;
 
     // DESC: Est. a Bi-Directional One-to-Many relationship w/ Accumulator
-    @OneToMany(mappedBy = "enrollment_id", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "enrollmentId", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TSGAccumulator> accumulators;
 
     // DESC: Helper-methods for Bi-Directional Enrollment--Accumulator relationship

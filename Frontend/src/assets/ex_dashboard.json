@@ -1,0 +1,39 @@
+{
+  "memberName": "Mike Files",
+  "planName": "Anthem Clear Choice Bronze X",
+  "planNetwork": "Anthem",
+  "planYear": 2025,
+  "accumulatorDeductibleType": "DEDUCTIBLE",
+  "accumulatorDeductibleLimitAmount": 7200,
+  "accumulatorDeductibleUsedAmount": 200,
+  "accumulatorOopMaxType": "OOP_MAX",
+  "accumulatorOopMaxLimitAmount": 8000,
+  "accumulatorOopMaxUsedAmount": 500,
+  "claims": [
+    {
+      "claimNumber": "#C-10307",
+      "claimStatus": "SUBMITTED",
+      "claimTotalMemberResponsibility": 1158.99
+    },
+    {
+      "claimNumber": "#C-10309",
+      "claimStatus": "DENIED",
+      "claimTotalMemberResponsibility": 1838.27
+    },
+    {
+      "claimNumber": "#C-10311",
+      "claimStatus": "IN_REVIEW",
+      "claimTotalMemberResponsibility": 709.51
+    },
+    {
+      "claimNumber": "#C-10302",
+      "claimStatus": "DENIED",
+      "claimTotalMemberResponsibility": 128.88
+    },
+    {
+      "claimNumber": "#C-10304",
+      "claimStatus": "PAID",
+      "claimTotalMemberResponsibility": 1442.73
+    }
+  ]
+}

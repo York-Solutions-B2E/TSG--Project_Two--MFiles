@@ -19,11 +19,13 @@ public class TSGClaimLine {
 
     // DESC: Est. a Bi-Directional Many-to-One relationship w/ Claim
     @ManyToOne
-    @JoinColumn(name = "claim_id", referencedColumnName = "lines")
+    @JoinColumn(name = "claim_id")
     private TSGClaim claimId;
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
+    // DESC: Enforce an auto-increment-esque functionality
+    // NOTE: This will entail getting the value of the last entry
+    // ... PRIOR TO entry of a new entry
+    @Column(nullable = false, unique = true, updatable = false)
     private Integer lineNumber;
 
     @Column(nullable = false)
@@ -39,7 +41,7 @@ public class TSGClaimLine {
     private BigDecimal allowedAmount;
 
     @Column(nullable = false)
-    private BigDecimal deductibleAmount;
+    private BigDecimal deductibleApplied;
 
     @Column(nullable = false)
     private BigDecimal copayApplied;
@@ -77,7 +79,7 @@ public class TSGClaimLine {
         this.description = description;
         this.billedAmount = billedAmount;
         this.allowedAmount = allowedAmount;
-        this.deductibleAmount = deductibleAmount;
+        this.deductibleApplied = deductibleApplied;
         this.copayApplied = copayApplied;
         this.coinsuranceApplied = coinsuranceApplied;
         this.planPaid = planPaid;
@@ -145,11 +147,11 @@ public class TSGClaimLine {
     }
 
     public BigDecimal getDeductibleAmount() {
-        return deductibleAmount;
+        return deductibleApplied;
     }
 
-    public void setDeductibleAmount(BigDecimal deductibleAmount) {
-        this.deductibleAmount = deductibleAmount;
+    public void setDeductibleAmount(BigDecimal deductibleApplied) {
+        this.deductibleApplied = deductibleApplied;
     }
 
     public BigDecimal getCopayApplied() {

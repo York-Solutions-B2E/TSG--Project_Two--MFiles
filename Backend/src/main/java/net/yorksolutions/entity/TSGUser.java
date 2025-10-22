@@ -10,7 +10,7 @@ import java.time.OffsetDateTime;
 import java.util.UUID;
 
 @Entity
-@Table(name = "User")
+@Table(name = "TSGUser")
 public class TSGUser {
     /**
      * SECTION:

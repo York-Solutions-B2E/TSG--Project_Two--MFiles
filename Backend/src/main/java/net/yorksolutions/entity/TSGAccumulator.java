@@ -29,12 +29,14 @@ public class TSGAccumulator {
 
     // DESC: Est. a Bi-Directional Many-to-One relationship w/ Enrollment
     @ManyToOne
-    @JoinColumn(name = "enrollment_id", referencedColumnName = "accumulators")
+    @JoinColumn(name = "enrollment_id")
     private TSGEnrollment enrollmentId;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TSGAccumulatorType type;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TSGNetworkTier tier;
 

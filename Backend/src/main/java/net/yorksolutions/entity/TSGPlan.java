@@ -1,9 +1,6 @@
 package net.yorksolutions.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import org.hibernate.annotations.UuidGenerator;
 
 import java.math.BigDecimal;
@@ -30,6 +27,7 @@ public class TSGPlan {
     @Column(nullable = false)
     private String name;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private TSGPlanType planType;
 
