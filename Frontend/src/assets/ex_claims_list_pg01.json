@@ -1,0 +1,100 @@
+{
+    "content": [
+        {
+            "claimNumber": "#C-10305",
+            "serviceStartDate": "2025-07-17",
+            "serviceEndDate": "2025-08-04",
+            "name": "River Clinic",
+            "status": "PAID",
+            "totalMemberResponsibility": 1163.99,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10300",
+            "serviceStartDate": "2025-08-31",
+            "serviceEndDate": "2025-07-22",
+            "name": "River Clinic",
+            "status": "SUBMITTED",
+            "totalMemberResponsibility": 1523.11,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10307",
+            "serviceStartDate": "2024-11-02",
+            "serviceEndDate": "2025-05-05",
+            "name": "River Clinic",
+            "status": "SUBMITTED",
+            "totalMemberResponsibility": 1158.99,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10303",
+            "serviceStartDate": "2025-06-17",
+            "serviceEndDate": "2025-07-22",
+            "name": "Prime Hospital",
+            "status": "SUBMITTED",
+            "totalMemberResponsibility": 179.68,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10311",
+            "serviceStartDate": "2025-01-29",
+            "serviceEndDate": "2025-04-13",
+            "name": "City Imaging Ctr",
+            "status": "IN_REVIEW",
+            "totalMemberResponsibility": 709.51,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10304",
+            "serviceStartDate": "2025-04-17",
+            "serviceEndDate": "2025-08-15",
+            "name": "City Imaging Ctr",
+            "status": "PAID",
+            "totalMemberResponsibility": 1442.73,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10301",
+            "serviceStartDate": "2025-07-15",
+            "serviceEndDate": "2025-04-02",
+            "name": "City Imaging Ctr",
+            "status": "IN_REVIEW",
+            "totalMemberResponsibility": 529.26,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10302",
+            "serviceStartDate": "2025-03-22",
+            "serviceEndDate": "2025-03-10",
+            "name": "Prime Hospital",
+            "status": "DENIED",
+            "totalMemberResponsibility": 128.88,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10306",
+            "serviceStartDate": "2025-08-07",
+            "serviceEndDate": "2025-02-07",
+            "name": "City Imaging Ctr",
+            "status": "IN_REVIEW",
+            "totalMemberResponsibility": 1234.88,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10310",
+            "serviceStartDate": "2025-08-22",
+            "serviceEndDate": "2025-01-21",
+            "name": "River Clinic",
+            "status": "PROCESSED",
+            "totalMemberResponsibility": 812.09,
+            "statusList": null
+        }
+    ],
+    "page": {
+        "size": 10,
+        "number": 0,
+        "totalElements": 12,
+        "totalPages": 2
+    }
+}

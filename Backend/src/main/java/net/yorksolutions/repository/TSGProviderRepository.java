@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface TSGProviderRepository extends JpaRepository<TSGProvider, UUID> {}
+public interface TSGProviderRepository extends JpaRepository<TSGProvider, UUID> {
+    // JPA Built-In Method: TSGProvider findById(UUID id)
+}

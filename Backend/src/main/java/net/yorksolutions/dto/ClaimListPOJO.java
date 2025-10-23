@@ -1,9 +1,5 @@
 package net.yorksolutions.dto;
 
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import net.yorksolutions.enumeration.TSGClaimStatus;
-
 import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;

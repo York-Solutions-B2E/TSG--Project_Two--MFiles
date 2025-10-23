@@ -1,0 +1,35 @@
+{
+    "claimNumber": "#C-10300",
+    "providerName": "River Clinic",
+    "serviceStartDate": "2025-08-31",
+    "serviceEndDate": "2025-07-22",
+    "status": "SUBMITTED",
+    "receivedDate": "2025-08-18",
+    "updatedAt": "2025-10-23T19:28:44.961524Z",
+    "totalBilled": 385.05,
+    "totalAllowed": 819.08,
+    "totalPlanPaid": 407.69,
+    "totalMemberResponsibility": 1523.11,
+    "claimLines": [
+        {
+            "cptCode": "93897",
+            "description": "Emboli detcj wo iv mbubb njx",
+            "billedAmount": 494.70,
+            "allowedAmount": 24.05,
+            "deductibleApplied": 210.33,
+            "copayApplied": 130.65,
+            "coinsuranceApplied": 10.31,
+            "memberResponsibility": 330.62
+        },
+        {
+            "cptCode": "73090",
+            "description": "X-ray exam of forearm",
+            "billedAmount": 379.02,
+            "allowedAmount": 59.97,
+            "deductibleApplied": 197.93,
+            "copayApplied": 318.91,
+            "coinsuranceApplied": 101.66,
+            "memberResponsibility": 19.67
+        }
+    ]
+}

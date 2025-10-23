@@ -1,0 +1,28 @@
+{
+    "content": [
+        {
+            "claimNumber": "#C-10308",
+            "serviceStartDate": "2025-07-03",
+            "serviceEndDate": "2025-02-04",
+            "name": "Prime Hospital",
+            "status": "PROCESSED",
+            "totalMemberResponsibility": 849.77,
+            "statusList": null
+        },
+        {
+            "claimNumber": "#C-10309",
+            "serviceStartDate": "2024-12-22",
+            "serviceEndDate": "2025-01-26",
+            "name": "Prime Hospital",
+            "status": "DENIED",
+            "totalMemberResponsibility": 1838.27,
+            "statusList": null
+        }
+    ],
+    "page": {
+        "size": 10,
+        "number": 1,
+        "totalElements": 12,
+        "totalPages": 2
+    }
+}
