@@ -26,13 +26,13 @@ Given that the project-functionality is incomplete, I did not manage to *Dockeri
 
 1. Clone the entire repo
 2. PostgreSQL
-  1. Create the database (`membership_dashboard` in this situation)
-  2. Create a user (**or** use the default user credentials)
-  3. Update the *.env* file in Spring for the applicable credentials
+  - Create the database (`membership_dashboard` in this situation)
+  - Create a user (**or** use the default user credentials)
+  - Update the *.env* file in Spring for the applicable credentials
 3. Spring
-  1. Sync. the project with Maven (IDE-specific steps not included)
-  2. Compile and run the app (as normal)
-  3. Using Postman the end-points are as follows:
+  - Sync. the project with Maven (IDE-specific steps not included)
+  - Compile and run the app (as normal)
+  - Using Postman the end-points are as follows:
 
 **Member Dashboard**
 ```
@@ -93,8 +93,8 @@ Given that the project-functionality is incomplete, I did not manage to *Dockeri
 ```
 
 4. React
-  1. Run `npm install` to pull in all dependencies
-  2. Run `npm run dev` to initialize the dev environment
+  - Run `npm install` to pull in all dependencies
+  - Run `npm run dev` to initialize the dev environment
 
 
 **Note:**
