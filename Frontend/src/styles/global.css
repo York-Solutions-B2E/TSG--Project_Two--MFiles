@@ -1,0 +1,293 @@
+/* Font-Import: Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/*
+* ROOT VARIABLES
+*/
+:root {
+    /* Logo, headers, primary buttons and footer */
+    --primary-deep-navy: #0a1624;
+
+    /* Secondary buttons, active states and borders */
+    --primary-soft-navy: #2a3a52;
+
+    /* Key interactive elements, links and highlights */
+    --accent-trust-blue: #0066cc;
+
+    /* Secondary CTAs, supporting highlights */
+    --accent-fresh-teal: #00a3af;
+
+    /* Page background, card background */
+    --neutral-warm-light-gray: #f8f9fa;
+
+    /* Borders, dividers, disabled states */
+    --neutral-cool-gray: #e9ecef;
+
+    /* Body text, secondary text */
+    --neutral-charcoal: #495057;
+
+    /* Success messages, positive indicators */
+    --success-calming-green: #28a745;
+
+    /* Warning messages, required field markers */
+    --warning-soft-amber: #ffc107;
+
+    /* Error messages, delete actions */
+    --error-muted-red: #dc3545;
+}
+
+/*
+* SITE-WIDE CSS
+*/
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--neutral-warm-light-gray);
+    color: var(--neutral-charcoal);
+}
+
+h1 {
+    font-weight: 600;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body,
+react-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+react-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.simple-link {
+    color: var(--accent-trust-blue);
+    text-decoration: none;
+}
+
+/* NOTE: Every page-based element will live within the <main> tag */
+main {
+    width: 95vw;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+* COMPONENT-SPECIFIC CSS
+*/
+
+/* Top Bar */
+site-top-bar {
+    position: absolute;
+    top: 0;
+    background-color: var(--primary-deep-navy);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 100vw;
+}
+site-top-bar > img {
+    width: 200px;
+}
+
+/* Error Page */
+error-page {
+    display: grid;
+    grid-template-areas:
+        "logo google-robot"
+        "error-code google-robot"
+        "output-message google-robot";
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+.logo > img {
+    width: 200px;
+}
+.logo {
+    grid-area: logo;
+}
+.error-code {
+    grid-area: error-code;
+}
+.output-message {
+    grid-area: output-message;
+}
+.google-robot {
+    grid-area: google-robot;
+}
+
+/* Login Page */
+google-login > button {
+    background-color: var(--primary-deep-navy);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 20px 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+google-login > button:hover {
+    background-color: var(--primary-soft-navy);
+}
+
+/* Simple Navigation */
+simple-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px dashed var(--primary-soft-navy);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Member Dashboard */
+member-dashboard,
+list-of-claims {
+    border: 1px solid var(--neutral-cool-gray);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px 2px rgb(233, 236, 239, 0.5);
+    width: 100%;
+    padding: 17px 17px 17px 17px;
+}
+policy-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* List of Claims */
+
+.fieldset-status,
+.fieldset-dates,
+.fieldset-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+fieldset > legend {
+    color: var(--accent-trust-blue);
+}
+
+user-input-field > label {
+    padding-left: 5px;
+}
+
+user-input-field > input {
+    background-color: white;
+}
+
+filter-menu > form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.btn-submit {
+    background-color: var(--primary-soft-navy);
+    color: white;
+    border-radius: 10px;
+    padding: 10px 35px 10px 35px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 7px;
+}
+
+.btn-submit:hover {
+    background-color: rgba(42, 58, 82, 0.5);
+}
+
+paginated-claims {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+paginated-claims > a {
+    text-decoration: none;
+    color: var(--accent-trust-blue);
+}
+claim-el {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+claim-el > span {
+    color: var(--accent-trust-blue);
+}
+
+/* Lower Navigation */
+/* NOTE: This is used across multiple pages with different info */
+lower-navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-top: 1px dashed var(--primary-soft-navy);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Logo, headers, primary buttons and footer */
+/* --primary-deep-navy: #0a1624; */
+
+/* Secondary buttons, active states and borders */
+/* --primary-soft-navy: #2a3a52; */
+
+/* Key interactive elements, links and highlights */
+/* --accent-trust-blue: #0066cc; */
+
+/* Secondary CTAs, supporting highlights */
+/* --accent-fresh-teal: #00a3af; */
+
+/* Page background, card background */
+/* --neutral-warm-light-gray: #f8f9fa; */
+
+/* Borders, dividers, disabled states */
+/* --neutral-cool-gray: #e9ecef; */
+
+/* Body text, secondary text */
+/* --neutral-charcoal: #495057; */
+
+/* Footer */
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary-deep-navy);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+}
+footer > p {
+    background-color: var(--primary-deep-navy);
+    font-weight: 100;
+    color: white;
+}
